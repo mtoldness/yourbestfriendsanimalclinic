@@ -1,0 +1,220 @@
+/* COMMENT HEADER
+Author: Monika Toldness
+Project: Final Project
+Date Created: Nov 20, 2022
+Last Updated: Dec 11, 2022
+SIU Fall 2022 */
+
+
+/*General Stylings*/
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    Width: 100%; 
+    margin: 10px; 
+    background-color: beige;
+    margin: 10px;
+    max-width: 1024px;
+    
+}
+h1{
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 3em;
+    
+}
+h2{
+    padding: 10px; 
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+h3{
+    padding: 10px; 
+    margin: 0;
+    text-align: center;
+    font-size: 1.125em;
+}
+h4{
+    padding: 10px; 
+    margin: 0;
+    text-align: center;
+    font-size: .75em;
+}
+ p {
+    padding: 0 5px; 
+}
+
+/* navigation menu*/
+#nav_menu ul{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color:bisque;
+}
+#nav_menu li{
+    background: none;
+    padding: 15px;
+    text-align: center;
+    background-color:antiquewhite;
+}
+#nav_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    font-size: 125%;
+}
+    
+main {
+    display: flex;
+}
+
+bio{
+    flex-basis: 45%;
+    border-right: 2px solid;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+homepagepic{
+    flex-basis: 45%;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+img {
+  float: left;
+    max-width: 100%;
+}
+
+/* border for image on meet us page*/
+#blkborder {    
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* set up for techs on meet us page*/
+#vettech1{
+    width: 45%;
+    float: left;
+    padding: 10px;
+    border-top: 5px solid black;
+}
+#vettech2{
+    width: 45%;
+    float: right;
+    padding: 10px;
+    border-top: 5px solid black;
+}
+
+/*table formatting*/
+table{
+    vertical-align: top;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: left;
+    width: auto;
+}
+th.left, td.left{ text-align: left;}
+
+/* contact forms*/
+fieldset{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+    float: left;
+}
+
+label{
+    float: left;
+    width: 15em;
+    
+}
+
+label, input, select{
+    font-size: 95%;
+}
+input, select{
+    margin-right: 1em;
+    margin-bottom: .5em;
+    width: 15em;
+}
+
+textarea{
+    height: 5em;
+    width: 25em;
+    font-family: sans-serif;
+}
+input:valid{
+    border: 1px solid black;
+}
+
+input:invalid{
+    box-shadow: none;
+}
+
+br{
+    clear: both;
+}
+
+#buttons input{
+    width: 10em;
+}
+/* hide mobile menu intialy*/
+#mobile_menu {
+    display: none;
+}
+
+/*tablet portrait to standard 960 */
+@media only and (max-width: 959px){
+    #nav_menu ul li a {font-size: .875em;}
+    h1 {font-size: 1.5em}
+    h2 {font-size: 1.125em}
+    p {font-size: 1em}
+    h6 { font-size: .875em}
+}
+
+/* mobile landscape to tablet portrait*/
+@media only and screen (max-width: 767px){
+    #nav_menu {display: none;}
+    #mobile_menu {
+        display: block;
+        width: 75%;
+    }
+    .slicknav_menu {background-color: beige !important;}
+    body{
+        width: 75%;
+        margin: 0;
+        border: none;
+    }
+}
+header, footer p {text-align: center;}
+footer p {margin-right: 0;}
+header h1 {
+    font-size: 1.625em;
+}
+header h2 {
+    font-size: 1em;.
+}
+vettech1 {
+        order: 1;
+}
+vettech2 {
+     order: 2;
+}
+homepagepic{
+    width: auto;
+    order: 1;
+}
